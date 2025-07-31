@@ -1,0 +1,48 @@
+#primary
+{   
+    div
+    {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    
+    div:nth-child(1)
+    {
+        padding-block: 26px;
+    }
+
+    div:nth-child(2)
+    {
+        padding-block: 20px;
+        margin-inline: auto;
+
+        img
+        {
+            padding-block: 4px;
+        }
+    }
+
+    div:nth-child(3)
+    {
+        padding-block: 26px;
+        justify-self: end;
+    }
+}
+
+#secondary
+{
+    div
+    {
+        display: flex;
+        align-items: center;
+        padding-block: 14px;
+        padding-inline: 32px;
+        justify-content: space-around;
+    }
+    
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+    font: var(--text-span);
+    color: var(--text-color-secondary);
+}
