@@ -32,17 +32,16 @@
 
 #secondary
 {
-    div
-    {
-        display: flex;
-        align-items: center;
-        padding-block: 14px;
-        padding-inline: 32px;
-        justify-content: space-around;
-    }
-    
     border: solid 1px var(--stroke-color);
     border-inline: none;
     font: var(--text-span);
     color: var(--text-color-secondary);
+
+    div
+    {
+        display: flex;
+        align-items: center;
+        padding-block: 13px;
+        justify-content: space-between;
+    }
 }
