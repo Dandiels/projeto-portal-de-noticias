@@ -25,4 +25,16 @@
             #020617 100%
         );
     }
+
+    figcaption
+    {
+        position: absolute;
+        bottom: 0;
+        padding: 0 24px 24px;
+    }
+
+    h2
+    {
+        margin-top: 8px;
+    }
 }
