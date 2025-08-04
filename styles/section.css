@@ -1,3 +1,36 @@
+section
+{
+    header
+    {
+        border-top: solid 1px var(--stroke-color);
+        padding-top: 11px;
+        color: var(--text-color-secondary);
+        font: var(--text-span);
+
+        a
+        {
+            justify-self: end;
+            align-items: center;
+            gap: 4px;
+
+            span
+            {
+                background-image: url(../assets/icons/ArrowRight.svg);
+                width: 16px;
+                height: 16px;
+            }
+        }
+
+        a:hover
+        {
+            span
+            {
+                background-image: url(../assets/icons/ArrowRight-hover.svg);
+            }
+        }
+    }
+}
+
 #featured
 {
     img
@@ -5,41 +38,73 @@
         height: 100%;
         object-fit: cover;
     }
+
+    .card
+    {
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+
+        &::before
+        {
+            content: "";
+            position: absolute;
+            inset: 0;
+            top: 50%;
+            background: linear-gradient(
+                180deg,
+                transparent 0%,
+                #020617 100%
+            );
+        }
+
+        figcaption
+        {
+            position: absolute;
+            bottom: 0;
+            
+            &:has(.text-lg)
+            {
+                padding: 0 12px 12px;
+            }
+            
+            padding: 0 24px 24px;
+        }
+
+        h2
+        {
+            margin-top: 8px;
+        }
+    }
 }
 
-.card
+#weekly
 {
-    position: relative;
-    border-radius: 4px;
-    overflow: hidden;
-
-    &::before
+    &>div
     {
-        content: "";
-        position: absolute;
-        inset: 0;
-        top: 50%;
-        background: linear-gradient(
-            180deg,
-            transparent 0%,
-            #020617 100%
-        );
+        margin-top: 24px;
+        grid-template-columns: repeat(4, 292px);
+        padding-bottom: 24px;
+    }
+    
+    img
+    {
+        height: 160px;
     }
 
-    figcaption
+    figure
     {
-        position: absolute;
-        bottom: 0;
-        
-        &:has(.text-lg)
+        position: relative;
+
+        .content-tag
         {
-            padding: 0 12px 12px;
+            position: absolute;
+            top: 8px;
+            left: 8px;
         }
-        
-        padding: 0 24px 24px;
     }
 
-    h2
+    p
     {
         margin-top: 8px;
     }
