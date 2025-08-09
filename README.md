@@ -42,7 +42,9 @@ Ou, se preferir:
 * Área lateral com anúncios e notícias rápidas.
 
 ## Captura de Tela
+
 ![Captura de Tela da Página do Portal de Notícias](assets/projeto-portal-de-noticias.png)
 
 ## Créditos
+
 Projeto inspirado e desenvolvido com referência aos materiais da **Rocketseat**.
