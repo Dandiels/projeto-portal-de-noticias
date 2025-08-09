@@ -18,7 +18,7 @@ O projeto está organizado da seguinte forma:
 * `styles/utility.css`: Classes utilitárias para Grid, espaçamentos e tipografia.
 * `styles/header.css`: Estilização da barra de navegação e menus.
 * `styles/section.css`: Estilização das seções de notícias e layout.
-* `assets/`: Pasta com imagens, ícones e logotipo do portal.
+* `assets/`: Pasta com imagens, ícones e logotipo do portal, além da captura de tela da página.
 
 ## Como Visualizar o Projeto
 
