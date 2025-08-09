@@ -1,6 +1,6 @@
 # Página de Portal de Notícias
 
-Este é um projeto de uma página de portal de notícias de tecnologia, desenvolvido com **HTML** e **CSS**. O layout apresenta manchetes em destaque, categorias, notícias mais lidas e seções temáticas, oferecendo uma experiência similar a grandes portais jornalísticos.
+Este é um projeto de uma página de portal de notícias de tecnologia, desenvolvido com **HTML** e **CSS**. O layout apresenta manchetes em destaque, categorias, notícias mais lidas e seções temáticas, oferecendo uma experiência similar a grandes portais jornalísticos. O design da página utiliza fontes personalizadas do Google Fonts.
 
 ## Tecnologias Utilizadas
 
