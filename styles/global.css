@@ -42,7 +42,7 @@ a:hover
     color: var(--brand-color-light);
 }
 
-h1, h2, h3
+h1, h2, h3, strong
 {
     font: inherit;
 }
@@ -61,8 +61,20 @@ img
 
 main
 {
-    margin-top: 40px;
-    gap: 80px;
+    grid-template-areas:
+    "featured featured"
+    "weekly weekly"
+    "artificial-intelligence aside";
+    
+    margin-block: 40px 80px;
+    row-gap: 80px;
+    column-gap: 32px;
+    grid-template-columns: 57.236842105% 40.131578947%;
+
+    span + h3
+    {
+        margin-top: 8px;
+    }
 }
 
 .content-tag
