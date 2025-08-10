@@ -1,5 +1,13 @@
+/* ===============================
+   header.css
+   Estilização do cabeçalho do portal,
+   incluindo navegação principal e secundária.
+   =============================== */
+
+/* Estilo para a barra de navegação principal (#primary) */
 #primary
 {   
+    /* Todos os divs internos do menu têm layout flexível e espaçamento entre elementos */
     div
     {
         display: flex;
@@ -7,41 +15,46 @@
         gap: 8px;
     }
     
+    /* Primeiro bloco: ícone e texto "Menu" */
     div:nth-child(1)
     {
-        padding-block: 26px;
+        padding-block: 26px; /* Espaçamento vertical */
     }
 
+    /* Segundo bloco: logotipo centralizado */
     div:nth-child(2)
     {
         padding-block: 20px;
-        margin-inline: auto;
+        margin-inline: auto; /* Centraliza horizontalmente */
 
         img
         {
-            padding-block: 4px;
+            padding-block: 4px; /* Ajusta espaçamento interno da logo */
         }
     }
 
+    /* Terceiro bloco: texto "Buscar" e ícone de lupa à direita */
     div:nth-child(3)
     {
         padding-block: 26px;
-        justify-self: end;
+        justify-self: end; /* Alinha ao lado direito */
     }
 }
 
+/* Barra de navegação secundária (#secondary) */
 #secondary
 {
-    border: solid 1px var(--stroke-color);
-    border-inline: none;
+    border: solid 1px var(--stroke-color); /* Borda superior e inferior */
+    border-inline: none; /* Remove bordas laterais */
     font: var(--text-span);
     color: var(--text-color-secondary);
 
+    /* Container de links das categorias */
     div
     {
         display: flex;
         align-items: center;
         padding-block: 13px;
-        justify-content: space-between;
+        justify-content: space-between; /* Espaço uniforme entre links */
     }
 }

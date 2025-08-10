@@ -1,18 +1,31 @@
+/* ===============================
+   section.css
+   Estilização das seções principais do portal:
+   - Manchete em destaque
+   - Mais lidas da semana
+   - Destaques de Inteligência Artificial
+   - Área lateral (anúncios e notícias rápidas)
+   =============================== */
+
+/* Estilo padrão para qualquer seção */
 section
 {
+    /* Cabeçalho de cada seção */
     header
     {
-        border-top: solid 1px var(--stroke-color);
-        padding-top: 11px;
+        border-top: solid 1px var(--stroke-color); /* Linha separadora no topo */
+        padding-top: 11px; /* Espaço interno acima do conteúdo */
         color: var(--text-color-secondary);
         font: var(--text-span);
 
+        /* Links dentro do cabeçalho */
         a
         {
-            justify-self: end;
+            justify-self: end; /* Alinha link à direita */
             align-items: center;
-            gap: 4px;
+            gap: 4px; /* Espaço entre texto e ícone */
 
+            /* Ícone de seta */
             span
             {
                 background-image: url(../assets/icons/ArrowRight.svg);
@@ -21,6 +34,7 @@ section
             }
         }
 
+        /* Troca o ícone no hover */
         a:hover
         {
             span
@@ -31,22 +45,27 @@ section
     }
 }
 
+/* ===============================
+   Seção: Manchete em destaque
+   =============================== */
 #featured
 {
-    grid-area: featured;
+    grid-area: featured; /* Define área do grid principal */
     
     img
     {
         height: 100%;
-        object-fit: cover;
+        object-fit: cover; /* Mantém proporção preenchendo todo o espaço */
     }
 
+    /* Cartões de notícia */
     .card
     {
         position: relative;
         border-radius: 4px;
         overflow: hidden;
 
+        /* Gradiente no rodapé da imagem */
         &::before
         {
             content: "";
@@ -60,11 +79,13 @@ section
             );
         }
 
+        /* Área de texto sobre a imagem */
         figcaption
         {
             position: absolute;
             bottom: 0;
             
+            /* Ajusta padding se for título menor */
             &:has(.text-lg)
             {
                 padding: 0 12px 12px;
@@ -73,6 +94,7 @@ section
             padding: 0 24px 24px;
         }
 
+        /* Espaço entre tag e título */
         h2
         {
             margin-top: 8px;
@@ -80,6 +102,9 @@ section
     }
 }
 
+/* ===============================
+   Seção: Mais lidas da semana
+   =============================== */
 #weekly
 {
     grid-area: weekly;
@@ -87,7 +112,7 @@ section
     &>div
     {
         margin-top: 24px;
-        grid-template-columns: repeat(4, 292px);
+        grid-template-columns: repeat(4, 292px); /* 4 colunas fixas */
         padding-bottom: 24px;
     }
     
@@ -100,6 +125,7 @@ section
     {
         position: relative;
 
+        /* Tag da categoria sobre a imagem */
         .content-tag
         {
             position: absolute;
@@ -114,6 +140,9 @@ section
     }
 }
 
+/* ===============================
+   Seção: Destaques de Inteligência Artificial
+   =============================== */
 #artificial-intelligence
 {
     grid-area: artificial-intelligence;
@@ -121,13 +150,15 @@ section
 
     article
     {   
-        align-items: center;
+        align-items: center; /* Centraliza verticalmente */
         
+        /* Texto secundário */
         p
         {
             color: var(--text-color-secondary);
         }
 
+        /* Imagem lateral */
         div:nth-child(2)
         {
             width: 176px;
@@ -143,18 +174,23 @@ section
         }
     }
 
+    /* Espaço entre o título e o texto secundário */
     span + h3
     {
         margin-bottom: 4px;
     }
 }
 
+/* ===============================
+   Área lateral (aside)
+   =============================== */
 aside
 {
     grid-area: aside;
     gap: 32px;
 }
 
+/* Anúncios */
 #ads
 {
     width: 488px;
@@ -169,6 +205,9 @@ aside
     }
 }
 
+/* ===============================
+   Seção: Mais notícias rápidas
+   =============================== */
 #more
 {
     gap: 24px;
@@ -177,6 +216,7 @@ aside
     {
         gap: 15px;
         
+        /* Imagem pequena da notícia */
         div:first-child
         {
             width: 72px;
@@ -191,16 +231,10 @@ aside
             }
         }
         
+        /* Título curto */
         h3
         {
             font: 14px/140% var(--font-family-bold);
         }
-    }
-    
-    img
-    {
-        width: 72px;
-        aspect-ratio: 1/1;
-        object-fit: cover;
     }
 }

@@ -1,43 +1,59 @@
+/* ===============================
+   utility.css
+   Classes utilitárias para facilitar
+   a construção do layout com Grid,
+   espaçamentos e tipografia.
+   =============================== */
+
+/* Ativa o display grid */
 .grid
 {
     display: grid;
 }
 
+/* Fluxo das colunas em sequência horizontal */
 .grid-flow-col
 {
     grid-auto-flow: column;
 }
 
+/* Define duas colunas iguais */
 .grid-cols-2
 {
     grid-template-columns: 1fr 1fr;
 }
 
+/* Espaçamento padrão de 16px entre elementos */
 .gap-16
 {
     gap: 16px;
 }
 
+/* Espaçamento padrão de 32px entre elementos */
 .gap-32
 {
     gap: 32px;
 }
 
+/* Tamanho de texto grande (h1) */
 .text-2xl
 {
     font: var(--h1);
 }
 
+/* Tamanho de texto médio-grande (h2) */
 .text-xl
 {
     font: var(--h2);
 }
 
+/* Tamanho de texto médio (h3) */
 .text-lg
 {
     font: var(--h3);
 }
 
+/* Texto pequeno */
 .text-sm
 {
     font: var(--text-sm);

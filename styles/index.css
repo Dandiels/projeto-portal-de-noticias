@@ -1,4 +1,10 @@
-@import url(global.css);
-@import url(utility.css);
-@import url(header.css);
-@import url(section.css);
+/* ===============================
+   index.css
+   Arquivo principal de estilos que
+   importa todos os módulos CSS do projeto.
+   =============================== */
+
+@import url(global.css);   /* Reset e variáveis globais */
+@import url(utility.css);  /* Classes utilitárias (grid, espaçamentos, tipografia, etc.) */
+@import url(header.css);   /* Estilos do cabeçalho e navegação */
+@import url(section.css);  /* Estilos das seções principais de conteúdo */
